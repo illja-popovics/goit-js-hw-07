@@ -6,11 +6,12 @@ const categories = categoriesList.querySelectorAll('li.item');
 
 // Порахувати кількість категорій
 const categoryCount = categories.length;
-console.log('Total categories:', categoryCount);
+console.log('Number of categories:', categoryCount);
 
 // Для кожної категорії вивести назву та кількість елементів
 categories.forEach(category => {
   const categoryName = category.querySelector('h2').textContent;
   const categoryItems = category.querySelectorAll('li').length;
-  console.log(`${categoryName} - ${categoryItems} items`);
+  console.log(`Category: ${categoryName}`);
+  console.log(`Elements: ${categoryItems}`);
 });
